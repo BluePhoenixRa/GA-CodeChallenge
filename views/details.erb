@@ -1,0 +1,22 @@
+<html>
+<head>
+	<link rel='stylesheet' href='/css/bootstrap.min.css'><title>Movie Details</title>
+</head>
+<body>
+	<div class='container'>
+		<img src="<%= poster %>" width='200px' />
+		<a class='btn btn-success btn-lg' href='/add/<%= id %>' role='button'>Add To Favorites</a>
+
+		<h1><%= title %></h1>
+		<div class='row'>
+			<div class='col-md-4'><strong>Year: </strong><%= year %></div>
+			<div class='col-md-4'><strong>Released: </strong><%= released %></div>
+			<div class='col-md-4'><strong>Runtime: </strong><%= runtime %></div>
+			<div class='col-md-4'><strong>Director: </strong><%= director %></div>
+			<div class='col-md-4'><strong>Actors: </strong><%= actors %></div>
+			<div class='col-md-4'><strong>Ratings: </strong><%= ratings %></div>
+		</div>
+		<h2>Plot:</h2>
+		<p><%= plot %></p>
+</body>
+</html>
